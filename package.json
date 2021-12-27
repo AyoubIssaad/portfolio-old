@@ -4,10 +4,10 @@
   "description": "Ayoub Issaad's Homepage",
   "main": "index.js",
   "scripts": {
-      "dev": "next dev -H 0.0.0.0",
-      "build": "next build",
-      "prettier": "prettier -write .",
-      "lint": "next lint"
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier -write .",
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/AyoubIssaad/portfolio#readme",
   "dependencies": {
+    "@chakra-ui/icons": "^1.1.1",
     "@chakra-ui/react": "^1.7.3",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",

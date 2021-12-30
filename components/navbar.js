@@ -1,4 +1,4 @@
-import Logo from "./logo.js";
+import Logo from "./logo";
 import NextLink from "next/link";
 import {
   Container,
@@ -12,9 +12,9 @@ import {
   MenuList,
   MenuButton,
   IconButton,
-  UseColorModeValue,
+  useColorModeValue
 } from "@chakra-ui/react";
-import { HumburgerIcon } from "@chakra-ui/react";
+import { HamburgerIcon } from "@chakra-ui/react";
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href;
@@ -31,7 +31,7 @@ const LinkItem = ({ href, path, children }) => {
 const Navbar = (props) => {
   const { path } = props;
 
-  retun(
+  return (
     <Box
       position="fixed"
       as="nav"
@@ -41,22 +41,22 @@ const Navbar = (props) => {
       zIndex={1}
       {...props}
     >
-    <Container
-    display="flex"
-    p={2}
-    maxW="container.md"
-    wrap="wrap"
-    align="center"
-    justify="space-between"
-    >
-    <Flex align="center" mr={5}>
-    <Heading as="h1" size="lg" letterSpacing={'tighter'}>
-      <Logo />
-    </Heading>
-    </Flex>
-    </Container>
+      <Container
+        display="flex"
+        p={2}
+        maxW="container.md"
+        wrap="wrap"
+        align="center"
+        justify="space-between"
+      >
+        <Flex align="center" mr={5}>
+          <Heading as="h1" size="lg" letterSpacing={"tighter"}>
+            <Logo />
+          </Heading>
+        </Flex>
+      </Container>
     </Box>
   );
 };
 
-expor default Navbar
+export default Navbar;

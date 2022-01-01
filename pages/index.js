@@ -5,7 +5,7 @@ const Page = () => {
     <Container>
       <Box borderRadius="lg" bg="red" p={3} mb={6} align="center">
         Hello, I&apos;m a full-stack, network and systems administrator based in
-        Japan!
+        Morocco!
       </Box>
 
       <Box display={{ md: "flex" }}>

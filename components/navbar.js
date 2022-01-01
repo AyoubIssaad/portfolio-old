@@ -15,6 +15,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
+import ThemeToggleButton from "./theme-toggle-button";
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href;
@@ -37,7 +38,7 @@ const Navbar = (props) => {
       as="nav"
       w="100%"
       bg={useColorModeValue("#ffffff40", "#20202380")}
-      style={{ backdropFilter: "blur(10px" }}
+      css={{ backdropFilter: "blur(10px)" }}
       zIndex={1}
       {...props}
     >
@@ -70,6 +71,7 @@ const Navbar = (props) => {
           </LinkItem>
         </Stack>
         <Box flex={1} align="right">
+          <ThemeToggleButton />
           <Box ml={2} display={{ base: "inline-block", md: "none" }}>
             <Menu>
               <MenuButton
@@ -88,6 +90,9 @@ const Navbar = (props) => {
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
+                <MenuItem as={Link} href="https://google.com">
+                  View Source
+                </MenuItem>
               </MenuList>
             </Menu>
           </Box>

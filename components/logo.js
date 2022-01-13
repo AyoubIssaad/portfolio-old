@@ -35,7 +35,7 @@ const Logo = () => {
             fontWeight="bold"
             ml={3}
           >
-            Ayoub ISSAAD
+            Ayoub Issaad
           </Text>
         </LogoBox>
       </a>

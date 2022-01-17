@@ -11,6 +11,7 @@ import {
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import { ChevronRightIcon } from "@chakra-ui/icons";
+import { BioSection, BioYear } from "../components/bio";
 
 const Page = () => {
   return (
@@ -70,6 +71,44 @@ const Page = () => {
             </Button>
           </NextLink>
         </Box>
+      </Section>
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Bio
+        </Heading>
+        <BioSection>
+          <BioYear>1991</BioYear>
+          Born in Safi, Morocco.
+        </BioSection>
+        <BioSection>
+          <BioYear>2010</BioYear>
+          Completed The Stuf and Stuff.
+        </BioSection>
+        <BioSection>
+          <BioYear>2013</BioYear>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+          iaculis massa ac lobortis suscipit. Praesent sollicitudin nulla in
+          magna dignissim, vel aliquam arcu lobortis. Sed pharetra nisi ante.
+          Proin lacinia urna sit amet dui consequat laoreet. Fusce nec sapien et
+          nunc dignissim efficitur vel vel lectus. Donec ultrices auctor mauris.
+        </BioSection>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          I ♥
+        </Heading>
+        <Paragraph>
+          Art, Music,{" "}
+          <Link href="https://illust.odoruinu.net/" target="_blank">
+            Drawing
+          </Link>
+          , Playing Drums,{" "}
+          <Link href="https://500px.com/p/craftzdog" target="_blank">
+            Photography
+          </Link>
+          , Leica, Machine Learning
+        </Paragraph>
       </Section>
     </Container>
   );

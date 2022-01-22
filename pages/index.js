@@ -42,7 +42,10 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Ayoub Issaad
             </Heading>
-            <p>Aubiss (DevOps Enthusiast / Developer / SysAdmin) </p>
+            <p>
+              Aubiss (Network and Sysadmin / FullStack Developer / DevOps &
+              Security Enthusiast){" "}
+            </p>
           </Box>
           <Box
             flexShrink={0}
@@ -67,10 +70,11 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-            Ayoub is a freelance and a full passopn for building digital
-            services, he is a sysadmin, Linux and security enthusiast {""}
+            In sollicitudin elit varius eros volutpat tincidunt. Proin venenatis
+            odio eget molestie lacinia. Sed volutpat condimentum fermentum.
+            Curabitur posuere porttitor velit eu mollis. {""}
             <NextLink href="/works/inkdrop">
-              <Link>Inkdrop</Link>
+              <Link>AUBISS</Link>
             </NextLink>
             .
           </Paragraph>
@@ -143,6 +147,17 @@ const Page = () => {
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<Icon as={IoLogoTwitter} />}
+                >
+                  @AyoubIssaad
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://twitter.com/AyoubIssaad" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoInstagram} />}
                 >
                   @AyoubIssaad
                 </Button>

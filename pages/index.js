@@ -43,7 +43,7 @@ const Page = () => {
               Ayoub Issaad
             </Heading>
             <p>
-              Aubiss (Network and Sysadmin / FullStack Developer / DevOps &
+              Aubiss (Network and Sysadmin / FullStack Developer / DevOoops &
               Security Enthusiast){" "}
             </p>
           </Box>

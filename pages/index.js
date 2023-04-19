@@ -34,7 +34,7 @@ const Page = () => {
           align="center"
         >
           Hello, I&apos;m a full-stack, network and systems administrator based
-          in Morocco!
+          in Morocco! HEHE
         </Box>
 
         <Box display={{ md: "flex" }}>
